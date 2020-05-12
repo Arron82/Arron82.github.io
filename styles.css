@@ -11,13 +11,19 @@ body
 {
     background-image: url('background01.jpg');
     background-size: cover;    
-    
 }
 
 table
 {
-    width: 70%;
+    width: 80%;
     margin: auto;
+    
+}
+
+#preview img
+{
+    max-height: 350px;
+    
 }
 
 .panel
@@ -28,6 +34,20 @@ table
     margin-top: 10%;
     
     
+}
+
+a
+{
+    color: red;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+a:hover
+{   
+    transition: 500ms;
+
+    color: blue;
 }
 
 /*TEXT PROPERTIES*/
