@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 
 /*RESET*/
 *
@@ -32,8 +32,9 @@ table
     background-color: rgba(255,255,255,.6);
     width: 100%;
     vertical-align: -webkit-baseline-middle;
-    margin-top: 10%;
-    
+    height: 100%;
+    position: fixed;
+    overflow: auto;
     
 }
 
@@ -57,7 +58,7 @@ main
     /*background-image: url('background03.png');*/
     width: 85%;
     margin: auto;
-    font-family: 'Neucha', cursive;
+    font-family: 'Nanum Gothic', sans-serif;
     font-size: 1.5em;
     /*margin-top: 12vh;*/
     position: relative;
@@ -144,8 +145,25 @@ a
 }
 
 
+.experience
+{
+    font-weight: lighter;
+    margin-top: 100px;
+}
 
+.experience ul
+{
+    font-size: 1.5em;
+    font-weight: bolder;
+}
 
+.experience li
+{
+    font-size: .5em;
+    list-style-type: none;
+    font-weight: bolder;
+
+}
 /********TRANSITION PROPERTIES********/
 
 /*fade properties*/
