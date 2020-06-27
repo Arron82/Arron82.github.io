@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+* 
+{
+    text-align: center;
+    padding: 0;
+    position: relative;
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    margin: auto;
+    
+}
+
+h1, h2, h3 
+{
+    margin: 25px auto;
+}
+
+h1 
+{
+    font-weight: 900;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+}
+
+ul
+{
+    font-weight: 900;
+    
+}
+
+li 
+{
+    font-weight: 900;
+    
+    text-shadow: 0px 0px 5px black;
+
+    a 
+    {
+        color: white;
+    }
+}
+
+
+
+
+main
+{
+    
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 1.5em;
+    position: fixed;
+    overflow-y: auto;
+    overflow-x: hidden;
+    
+    nav 
+    {
+        display: block;
+        margin: 50px auto 0px auto;        
+        text-align: center;
+        
+        
+
+        a :hover 
+        {
+            transition-duration: 500ms;
+            transform: scale(1.25);
+        }
+        
+
+        img 
+        {
+            max-width: 100px;
+            padding: 0 25px;
+        }
+
+    }
+
+    .description 
+    {
+        text-align: justify;
+        width: 85%;
+        margin: auto;
+    }
+
+    #contact_icons img 
+    {
+        max-width: 15%;
+        margin-top: 25px;
+    }
+}
+
+.experience 
+{
+    a:hover
+    {
+        animation-name: link;
+        animation-duration: 750ms;
+        //animation-fill-mode: forwards;
+    }
+}
+
+table
+{
+    a :hover
+    {
+        transform: scale(1.25);
+        transition-duration: 500ms;
+    }
+}
+
+@media only screen and (max-width: 400px)
+{
+    *
+    {
+        font-size: .95em;
+    }
+    main 
+    {
+        width: 100%;
+        margin: auto;
+    }
+
+    nav 
+    {
+        img 
+        {
+            width: 50px;
+        }
+    }
+}
+
+@keyframes link
+{
+    25%
+    {
+        font-weight: 100;
+        color: white;
+        text-shadow: none;
+    }
+    50%
+    {
+        color: black;
+        text-shadow: none;
+    }
+
+    75%
+    {
+        font-weight: 900;
+    }
+
+    100%
+    {
+        
+    
+    text-shadow: 0px 0px 5px black;
+    }
+}
+
+/********TRANSITION PROPERTIES********/
+
+/*fade properties*/
+.transition-fade
+{
+    opacity: 1;
+    transition: 1s;
+}
+
+html.is-animating .transition-fade
+{
+    opacity: 0;    
+}
+
+/*slide properties*/
+
+.transition-slide
+{
+    transition: 1s;
+    transform: translateX(0);
+}
+
+html.is-animating .transition-slide
+{
+    transform: translateX(25%);
+    opacity: 0;
+}
+
+.transition-slideLEFT
+{
+    transition: 750ms;
+    transform: translateX(0);
+}
+
+html.is-animating .transition-slideLEFT
+{
+    transform: translateX(50%);
+}
