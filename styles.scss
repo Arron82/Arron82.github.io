@@ -85,12 +85,18 @@ main
         text-align: justify;
         width: 85%;
         margin: auto;
+       
     }
 
     #contact_icons img 
     {
         max-width: 15%;
         margin-top: 25px;
+    }
+
+    p 
+    {
+        text-shadow: 2px 2px 1px rgb(201, 201, 201);
     }
 }
 

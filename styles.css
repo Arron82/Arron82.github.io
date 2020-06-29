@@ -72,6 +72,10 @@ main #contact_icons img {
   margin-top: 25px;
 }
 
+main p {
+  text-shadow: 2px 2px 1px #c9c9c9;
+}
+
 .experience a:hover {
   -webkit-animation-name: link;
           animation-name: link;
